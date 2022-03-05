@@ -1,11 +1,14 @@
 {
+  "homepage": "https://suchendra1.github.io/idcbackend",
   "name": "idcbackend",
   "version": "1.0.0",
   "description": "intensive diabetic care backend",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node index.js",
-    "build": "cd server && npm install && npm run build",
+    "build": "npm install && npm run start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +20,6 @@
   "bugs": {
     "url": "https://github.com/suchendra1/idcbackend/issues"
   },
-  "homepage": "https://github.com/suchendra1/idcbackend#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.3",

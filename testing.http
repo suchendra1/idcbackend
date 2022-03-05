@@ -17,22 +17,23 @@ Content-Type: application/json
 
 ###
 POST http://localhost:3005/newrecord
+Authorization: BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZW1iZXJpZCI6ImFkbWluIiwiaWF0IjoxNjQ2NDYwNjIzfQ.e9qIU0EIJcu4VN5iI4u3ta_T0rejPkGLacrRePjr1EQ
 Content-Type: application/json
 
 {
     "memberid":"admin",
     "name":"sai",
     "date":"2022-02-16",
-    "mobile":"1234",
-    "bp":"12",
-    "fbs":"123",
-    "ppbs":"34",
-    "rbs":"54",
-    "HbA1c":"45",
-    "urea":"67",
-    "creatinine":"34",
-    "complains":"no",
-    "othersignificantnotes":""
+    "mobileNo":"1234",
+    "BP":"12",
+    "FBS":"123",
+    "PPBS":"34",
+    "RBS":"54",
+    "HbA1C":"45",
+    "Urea":"67",
+    "Creatinine":"34",
+    "Complaints":"no",
+    "OthersignificantNotes":""
 }
 
 ###
