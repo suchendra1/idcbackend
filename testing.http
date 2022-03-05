@@ -1,0 +1,40 @@
+POST http://localhost:3005/login
+Content-Type: application/json
+
+{
+    "memberid":"admin",
+    "password":"123"
+}
+
+###
+POST http://localhost:3005/register
+Content-Type: application/json
+
+{
+    "memberid":"adm",
+    "password":"123"
+}
+
+###
+POST http://localhost:3005/newrecord
+Content-Type: application/json
+
+{
+    "memberid":"admin",
+    "name":"sai",
+    "date":"2022-02-16",
+    "mobile":"1234",
+    "bp":"12",
+    "fbs":"123",
+    "ppbs":"34",
+    "rbs":"54",
+    "HbA1c":"45",
+    "urea":"67",
+    "creatinine":"34",
+    "complains":"no",
+    "othersignificantnotes":""
+}
+
+###
+GET http://localhost:3005/showrecord
+Authorization : BEARER eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtZW1iZXJpZCI6ImFkbWluIiwiaWF0IjoxNjQ2MjE1MjgyfQ.DI0TfI_B0SNJ6oZdlhvZjjHYljkzVNChtmaaVvzVXU4
