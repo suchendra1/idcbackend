@@ -108,6 +108,11 @@ app.post("/register" , async (req, res)=>{
   }
 });
 
+app.post("/getmemberid",authenticateUser,async(req,res)=>{
+  const {memberid} = req.body;
+  res.send({memberid})
+})
+
 app.post("/newrecord",authenticateUser, async (req,res)=>{
   const {memberid,name,date,mobileNo,BP,FBS,PPBS,RBS,HbA1C,Urea,Creatinine,Microalbuminuria,Complaints,OtherSignificantNotes} = req.body;
   console.log(OtherSignificantNotes,Complaints)
